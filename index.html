@@ -19,18 +19,18 @@
     --s1-bg: #EEF3FE;
     --s1-border: #7F77DD;
     --s1-accent: #534AB7;
-    --s2-bg: #E1F5EE;
-    --s2-border: #1D9E75;
-    --s2-accent: #0F6E56;
-    --s3-bg: #FAECE7;
-    --s3-border: #D85A30;
-    --s3-accent: #993C1D;
-    --s4-bg: #FAEEDA;
-    --s4-border: #BA7517;
-    --s4-accent: #854F0B;
-    --s5-bg: #FBEAF0;
-    --s5-border: #D4537E;
-    --s5-accent: #993556;
+    --s2-bg: #FBEAF0;
+    --s2-border: #D4537E;
+    --s2-accent: #993556;
+    --s3-bg: #E1F5EE;
+    --s3-border: #1D9E75;
+    --s3-accent: #0F6E56;
+    --s4-bg: #FAECE7;
+    --s4-border: #D85A30;
+    --s4-accent: #993C1D;
+    --s5-bg: #FAEEDA;
+    --s5-border: #BA7517;
+    --s5-accent: #854F0B;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -134,7 +134,6 @@
     transition: background 0.3s, color 0.3s;
   }
 
-  /* Checkbox toggle */
   .check-wrap {
     display: flex;
     align-items: center;
@@ -184,19 +183,19 @@
   .s1-card .card-link { color: var(--s1-accent); }
 
   .s2-card::before { background: var(--s2-border); }
-  .s2-card .badge { background: rgba(15,110,86,0.1); color: var(--s2-accent); }
+  .s2-card .badge { background: rgba(153,53,86,0.1); color: var(--s2-accent); }
   .s2-card .card-link { color: var(--s2-accent); }
 
   .s3-card::before { background: var(--s3-border); }
-  .s3-card .badge { background: rgba(152,60,29,0.1); color: var(--s3-accent); }
+  .s3-card .badge { background: rgba(15,110,86,0.1); color: var(--s3-accent); }
   .s3-card .card-link { color: var(--s3-accent); }
 
   .s4-card::before { background: var(--s4-border); }
-  .s4-card .badge { background: rgba(133,79,11,0.1); color: var(--s4-accent); }
+  .s4-card .badge { background: rgba(152,60,29,0.1); color: var(--s4-accent); }
   .s4-card .card-link { color: var(--s4-accent); }
 
   .s5-card::before { background: var(--s5-border); }
-  .s5-card .badge { background: rgba(153,53,86,0.1); color: var(--s5-accent); }
+  .s5-card .badge { background: rgba(133,79,11,0.1); color: var(--s5-accent); }
   .s5-card .card-link { color: var(--s5-accent); }
 
   .divider {
@@ -290,7 +289,7 @@
 
 <div class="divider">↓ Up next</div>
 
-<!-- STAGE 1 -->
+<!-- STAGE 1 — OOP -->
 <div class="stage">
   <div class="stage-header">
     <div class="stage-num" id="num-s1" style="background:var(--s1-bg);color:var(--s1-accent);">1</div>
@@ -316,137 +315,17 @@
   </div>
 </div>
 
-<!-- STAGE 2 -->
+<!-- STAGE 2 — GIT (moved up) -->
 <div class="stage">
   <div class="stage-header">
     <div class="stage-num" id="num-s2" style="background:var(--s2-bg);color:var(--s2-accent);">2</div>
-    <span class="stage-title">Dev Environment & Code Quality</span>
-    <span class="stage-subtitle">~8–10 hrs</span>
-  </div>
-  <div class="tip-box">
-    <strong>Why now?</strong> Before tackling real projects, set up your workspace properly and learn to write code others (and future you) can actually read.
-  </div>
-  <div class="course-card s2-card" data-id="setup">
-    <div class="badge">Setup</div>
-    <div class="card-top">
-      <div>
-        <div class="card-title">Set Up Your Python Environment</div>
-        <div class="card-desc">pip, virtualenv, PyCharm — the professional toolset every Python developer needs from day one.</div>
-      </div>
-      <a class="card-link" href="https://openclassrooms.com/en/courses/6951236-set-up-your-python-environment" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
-    </div>
-    <div class="check-wrap">
-      <div class="check-btn" id="cb-setup"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
-      <span class="check-label" id="cl-setup">Mark as complete</span>
-    </div>
-  </div>
-  <div class="course-card s2-card" data-id="quality">
-    <div class="badge">Quality</div>
-    <div class="card-top">
-      <div>
-        <div class="card-title">Write Maintainable Python Code</div>
-        <div class="card-desc">PEP 8 style guide, SOLID principles, MVC and key design patterns — how to write code at a professional standard.</div>
-      </div>
-      <a class="card-link" href="https://openclassrooms.com/en/courses/6900866-write-maintainable-python-code" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
-    </div>
-    <div class="check-wrap">
-      <div class="check-btn" id="cb-quality"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
-      <span class="check-label" id="cl-quality">Mark as complete</span>
-    </div>
-  </div>
-</div>
-
-<!-- STAGE 3 -->
-<div class="stage">
-  <div class="stage-header">
-    <div class="stage-num" id="num-s3" style="background:var(--s3-bg);color:var(--s3-accent);">3</div>
-    <span class="stage-title">Testing & Debugging</span>
-    <span class="stage-subtitle">~8–12 hrs</span>
-  </div>
-  <div class="tip-box">
-    <strong>Why now?</strong> Testing before frameworks means you'll write testable code from the start, not retrofit it later. This pays dividends for every project you ever build.
-  </div>
-  <div class="course-card s3-card" data-id="testing">
-    <div class="badge">Testing</div>
-    <div class="card-top">
-      <div>
-        <div class="card-title">Test Your Python Project</div>
-        <div class="card-desc">Pytest, fixtures, unit tests, TDD fundamentals — the habits that separate hobbyist code from professional software.</div>
-      </div>
-      <a class="card-link" href="https://openclassrooms.com/en/courses/7747411-test-your-python-project" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
-    </div>
-    <div class="check-wrap">
-      <div class="check-btn" id="cb-testing"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
-      <span class="check-label" id="cl-testing">Mark as complete</span>
-    </div>
-  </div>
-  <div class="course-card s3-card" data-id="debug">
-    <div class="badge">Debugging</div>
-    <div class="card-top">
-      <div>
-        <div class="card-title">Debug Your Python & Django Code</div>
-        <div class="card-desc">Systematic techniques for finding and fixing bugs across Python programs and web frameworks.</div>
-      </div>
-      <a class="card-link" href="https://openclassrooms.com/en/courses/7155841-debug-your-python-and-django-code" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
-    </div>
-    <div class="check-wrap">
-      <div class="check-btn" id="cb-debug"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
-      <span class="check-label" id="cl-debug">Mark as complete</span>
-    </div>
-  </div>
-</div>
-
-<!-- STAGE 4 -->
-<div class="stage">
-  <div class="stage-header">
-    <div class="stage-num" id="num-s4" style="background:var(--s4-bg);color:var(--s4-accent);">4</div>
-    <span class="stage-title">Web Development with Django</span>
-    <span class="stage-subtitle">~20–30 hrs</span>
-  </div>
-  <div class="tip-box">
-    <strong>Why now?</strong> Django is Python's most in-demand web framework and the core of OpenClassrooms' Python Developer path. Two courses take you from zero to advanced app.
-  </div>
-  <div class="course-card s4-card" data-id="django1">
-    <div class="badge">Framework</div>
-    <div class="card-top">
-      <div>
-        <div class="card-title">Create a Web Application With Django</div>
-        <div class="card-desc">MVT architecture, Django Admin, CRUD interfaces — build your first full web application.</div>
-      </div>
-      <a class="card-link" href="https://openclassrooms.com/en/courses/6967196-create-a-web-application-with-django" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
-    </div>
-    <div class="check-wrap">
-      <div class="check-btn" id="cb-django1"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
-      <span class="check-label" id="cl-django1">Mark as complete</span>
-    </div>
-  </div>
-  <div class="course-card s4-card" data-id="django2">
-    <div class="badge">Advanced</div>
-    <div class="card-top">
-      <div>
-        <div class="card-title">Go Further With Django</div>
-        <div class="card-desc">Authentication, advanced models, forms, Django ORM for complex queries, social feeds — production-level Django.</div>
-      </div>
-      <a class="card-link" href="https://openclassrooms.com/us/courses/7192426-allez-plus-loin-avec-le-framework-django" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
-    </div>
-    <div class="check-wrap">
-      <div class="check-btn" id="cb-django2"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
-      <span class="check-label" id="cl-django2">Mark as complete</span>
-    </div>
-  </div>
-</div>
-
-<!-- STAGE 5 -->
-<div class="stage">
-  <div class="stage-header">
-    <div class="stage-num" id="num-s5" style="background:var(--s5-bg);color:var(--s5-accent);">5</div>
     <span class="stage-title">Version Control & Tooling</span>
     <span class="stage-subtitle">~5 hrs</span>
   </div>
   <div class="tip-box">
-    <strong>Why now?</strong> Once your projects grow, Git becomes non-negotiable. Learn it before tackling data science or collaboration projects.
+    <strong>Why now?</strong> Start using Git properly from the beginning — before your projects grow. Branching, pull requests, and meaningful commits are habits best built early, and your IT team will expect them from day one.
   </div>
-  <div class="course-card s5-card" data-id="git">
+  <div class="course-card s2-card" data-id="git">
     <div class="badge">Essential</div>
     <div class="card-top">
       <div>
@@ -462,12 +341,132 @@
   </div>
 </div>
 
+<!-- STAGE 3 — DEV ENVIRONMENT & CODE QUALITY -->
+<div class="stage">
+  <div class="stage-header">
+    <div class="stage-num" id="num-s3" style="background:var(--s3-bg);color:var(--s3-accent);">3</div>
+    <span class="stage-title">Dev Environment & Code Quality</span>
+    <span class="stage-subtitle">~8–10 hrs</span>
+  </div>
+  <div class="tip-box">
+    <strong>Why now?</strong> Before tackling real projects, set up your workspace properly and learn to write code others (and future you) can actually read.
+  </div>
+  <div class="course-card s3-card" data-id="setup">
+    <div class="badge">Setup</div>
+    <div class="card-top">
+      <div>
+        <div class="card-title">Set Up Your Python Environment</div>
+        <div class="card-desc">pip, virtualenv, PyCharm — the professional toolset every Python developer needs from day one.</div>
+      </div>
+      <a class="card-link" href="https://openclassrooms.com/en/courses/6951236-set-up-your-python-environment" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
+    </div>
+    <div class="check-wrap">
+      <div class="check-btn" id="cb-setup"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
+      <span class="check-label" id="cl-setup">Mark as complete</span>
+    </div>
+  </div>
+  <div class="course-card s3-card" data-id="quality">
+    <div class="badge">Quality</div>
+    <div class="card-top">
+      <div>
+        <div class="card-title">Write Maintainable Python Code</div>
+        <div class="card-desc">PEP 8 style guide, SOLID principles, MVC and key design patterns — how to write code at a professional standard.</div>
+      </div>
+      <a class="card-link" href="https://openclassrooms.com/en/courses/6900866-write-maintainable-python-code" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
+    </div>
+    <div class="check-wrap">
+      <div class="check-btn" id="cb-quality"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
+      <span class="check-label" id="cl-quality">Mark as complete</span>
+    </div>
+  </div>
+</div>
+
+<!-- STAGE 4 — TESTING & DEBUGGING -->
+<div class="stage">
+  <div class="stage-header">
+    <div class="stage-num" id="num-s4" style="background:var(--s4-bg);color:var(--s4-accent);">4</div>
+    <span class="stage-title">Testing & Debugging</span>
+    <span class="stage-subtitle">~8–12 hrs</span>
+  </div>
+  <div class="tip-box">
+    <strong>Why now?</strong> Testing before frameworks means you'll write testable code from the start, not retrofit it later. This pays dividends for every project you ever build.
+  </div>
+  <div class="course-card s4-card" data-id="testing">
+    <div class="badge">Testing</div>
+    <div class="card-top">
+      <div>
+        <div class="card-title">Test Your Python Project</div>
+        <div class="card-desc">Pytest, fixtures, unit tests, TDD fundamentals — the habits that separate hobbyist code from professional software.</div>
+      </div>
+      <a class="card-link" href="https://openclassrooms.com/en/courses/7747411-test-your-python-project" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
+    </div>
+    <div class="check-wrap">
+      <div class="check-btn" id="cb-testing"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
+      <span class="check-label" id="cl-testing">Mark as complete</span>
+    </div>
+  </div>
+  <div class="course-card s4-card" data-id="debug">
+    <div class="badge">Debugging</div>
+    <div class="card-top">
+      <div>
+        <div class="card-title">Debug Your Python & Django Code</div>
+        <div class="card-desc">Systematic techniques for finding and fixing bugs across Python programs and web frameworks.</div>
+      </div>
+      <a class="card-link" href="https://openclassrooms.com/en/courses/7155841-debug-your-python-and-django-code" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
+    </div>
+    <div class="check-wrap">
+      <div class="check-btn" id="cb-debug"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
+      <span class="check-label" id="cl-debug">Mark as complete</span>
+    </div>
+  </div>
+</div>
+
+<!-- STAGE 5 — DJANGO -->
+<div class="stage">
+  <div class="stage-header">
+    <div class="stage-num" id="num-s5" style="background:var(--s5-bg);color:var(--s5-accent);">5</div>
+    <span class="stage-title">Web Development with Django</span>
+    <span class="stage-subtitle">~20–30 hrs</span>
+  </div>
+  <div class="tip-box">
+    <strong>Why now?</strong> Django is Python's most in-demand web framework and the core of OpenClassrooms' Python Developer path. Two courses take you from zero to advanced app.
+  </div>
+  <div class="course-card s5-card" data-id="django1">
+    <div class="badge">Framework</div>
+    <div class="card-top">
+      <div>
+        <div class="card-title">Create a Web Application With Django</div>
+        <div class="card-desc">MVT architecture, Django Admin, CRUD interfaces — build your first full web application.</div>
+      </div>
+      <a class="card-link" href="https://openclassrooms.com/en/courses/6967196-create-a-web-application-with-django" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
+    </div>
+    <div class="check-wrap">
+      <div class="check-btn" id="cb-django1"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
+      <span class="check-label" id="cl-django1">Mark as complete</span>
+    </div>
+  </div>
+  <div class="course-card s5-card" data-id="django2">
+    <div class="badge">Advanced</div>
+    <div class="card-top">
+      <div>
+        <div class="card-title">Go Further With Django</div>
+        <div class="card-desc">Authentication, advanced models, forms, Django ORM for complex queries, social feeds — production-level Django.</div>
+      </div>
+      <a class="card-link" href="https://openclassrooms.com/us/courses/7192426-allez-plus-loin-avec-le-framework-django" target="_blank" onclick="event.stopPropagation()">Open <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
+    </div>
+    <div class="check-wrap">
+      <div class="check-btn" id="cb-django2"><svg viewBox="0 0 12 12"><polyline points="1.5,6 4.5,9.5 10.5,2.5"/></svg></div>
+      <span class="check-label" id="cl-django2">Mark as complete</span>
+    </div>
+  </div>
+</div>
+
 <!-- FORK -->
 <div class="divider">Choose your path →</div>
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:40px;">
   <div style="border-radius:12px;border:1px solid var(--border);background:var(--card);padding:20px;">
-    <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--s2-accent);margin-bottom:10px;">Path A — Data Science</div>
+    <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--s3-accent);margin-bottom:10px;">Path A — Data Science</div>
     <div style="font-size:14px;font-weight:500;margin-bottom:8px;">Python for Data & AI</div>
     <div style="font-size:13px;color:var(--muted);margin-bottom:14px;line-height:1.5;">NumPy, Pandas, Matplotlib, Seaborn, Jupyter notebooks, machine learning fundamentals.</div>
     <a class="card-link" style="display:inline-flex" href="https://openclassrooms.com/en/courses/8253136-use-python-libraries-for-data-science" target="_blank">Data Science Libraries <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
@@ -490,7 +489,7 @@
 
 <script>
   const STORAGE_KEY = 'python_roadmap_progress_v1';
-  const ALL_COURSES = ['oop','setup','quality','testing','debug','django1','django2','git'];
+  const ALL_COURSES = ['oop','git','setup','quality','testing','debug','django1','django2'];
   const TOTAL = ALL_COURSES.length;
 
   function loadState() {
